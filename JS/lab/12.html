@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Divide by Zero Example</title>
+</head>
+<body>
+    <script>
+        function divideNumbers(a, b) {
+            try {
+                if (b === 0) {
+                
+                    throw new Error("Cannot divide by zero!");
+                }
+                let result = a / b;
+                document.write("Result: " + result);
+            } catch (error) {
+                document.write("Error: " + error.message);
+            }
+        }
+        divideNumbers(10, 0);
+    </script>
+</body>
+</html>
