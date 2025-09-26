@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="daychecker">
+    <button onclick="daychecker()"> check the day</button>
+    <p id="result"></p>
+    <script>
+        function daychecker()
+        {
+       let number=(document.getElementById("daychecker").value) 
+        let result="";
+        switch (number) {
+                case "1":
+                result=("Monday");
+                break;
+                case "2":
+                    result=("Tuesday");
+                    break;
+                case "3":
+                    result=("wednesday");
+                     break;
+                case "4":
+                    result=("Thrusday");
+                     break;
+                case "5":
+                    result=("friday");
+                     break;
+                case "6":
+                    result=("saturday");
+                     break;
+                case "7":
+                    result=("sunday");
+                     break;
+            default:
+            result=("number is not a between 1-7")
+                break;
+        }
+        document.getElementById("result").innerText=result;
+    }
+
+
+    </script>
+</body>
+</html>
