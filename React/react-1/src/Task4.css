@@ -1,0 +1,15 @@
+.usercard{
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    width:250px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: black;
+}
+.userdetail{
+    text-align: center;
+    margin: 5px 0;
+    color:white;
+    font-weight: bold;
+}
